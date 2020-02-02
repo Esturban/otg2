@@ -6,6 +6,20 @@ title = "Only The Glass | Replacing just the glass ... preserving your window ca
 theme = "otg-theme"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+    
 [params]
 
     # You can use Markdown syntax for urls [text](//url.to/source) for
