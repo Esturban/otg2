@@ -1,0 +1,129 @@
+# Site settings
+baseurl = "/"
+baseURL = "/"
+languageCode = "en-us"
+title = "Only The Glass | Replacing just the glass ... preserving your window casement"
+theme = "otg-theme"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[params]
+
+    # You can use Markdown syntax for urls [text](//url.to/source) for
+    # most longer texts.
+
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "Only The Glass | Replacing your glass in Greater Toronto Area | Residential, Commercial, High-rise, ..."
+    description = "Only the Glass repairs and replaces glass with certified experts servicing homes, commercial, and high-rise... start saving money with energy efficient thermal units..." 
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email youself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    email = ""
+
+    # Custom assets
+	custom_css = ["css/freelancer.css"]
+	#custom_js  = ["js/wow.min.js","js/bootstrap.min.js","js/main.js","js/slick.min.js","js/venobox.min.js","js/jquery.min.js"]
+
+    [params.navigation]
+        brand = "Only The Glass"
+
+
+    [params.header]
+        # Copy your own image into './static/img/'' if you wish
+        image = "rsz_1otg.png"
+        name = "professional & reliable"
+        subtitle = "Residental - Commercial - High-rise"
+
+
+    [params.portfolio]
+        # All projects defined in their own files. You can find example projects
+        # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+        # at the root of this Hugo site.
+        # For more informtion take a look at the README.
+        title = "Jobs"
+        overlay = true
+
+        [params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttontext = "Close"
+
+
+    [params.about]
+        title = "Who we are"
+        # The about text is splitted into a left and right column
+        left = "Only the Glass is a local glass replacement business serving all of the Greater Toronto Area (GTA) residential and commercial customers. Our certified staff have customer satisfaction as their first priority and move without delay to service your needs"
+        right = "Whether you’re looking for a quick fix glass repair solution nearby or a large scale thermal installation our experts will layout options available to you instead of wasting your money on costly window frame replacements!"
+
+        [params.about.button]
+            text = "Our work"
+            link = "//instagram.com/onlytheglass"
+            icon = "tasks"
+    
+    [params.posts]
+        title = "In the Field"
+
+    [params.contact]
+        title = "Here to help"
+
+        # 'error' defines error messages for invalid inputs
+        [params.contact.form.name]
+            text = "What do you go by?"
+            error = "Please enter your name."
+
+        [params.contact.form.email]
+            text = "Email Address"
+            error = "Please enter your email address."
+
+        [params.contact.form.phone]
+            text = "Contact number"
+            error = "Please enter your phone number."
+
+        [params.contact.form.message]
+            text = "Tell us what you're looking for"
+            error = "Please enter a message."
+
+        [params.contact.form.button]
+            text = "Send"
+
+
+    [params.footer]
+        copyright = "<p><small>&copy; 2019 Only the Glass. All Rights Reserved. <br>Replacing your thermal units with ♥ since 2015 </small></p>"
+
+        [params.footer.location]
+            title = "Areas we service"
+            # Postal address (add as many lines as necessary)
+            address = ["Alliston, Angus, Aurora, Barrie,"," Bracebridge, Coldwater, Collingwood, Concord, Gravenhurst, Huntsville, Innisfil, King City, Mactier, Maple, Midland, Orillia, Oro-Medonte, Penetanguishene, Richmond Hill, Seguin, Severn Bridge, Thornhill, Utterson, Wasaga Beach"]
+
+        [params.footer.social]
+            title = "Get in touch!"
+            phone = "[647 739 7325](callto://+16477397325) <br> [647 907 3497](callto://+16479073497)"
+            # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+            # for more icons. The icons are represented by their corresponding
+            # CSS class.
+            [[params.footer.social.networks]]
+                icon = "fa-facebook"
+                link = "//facebook.com/onlytheglass"
+
+            [[params.footer.social.networks]]
+                icon = "fa-instagram"
+                link = "//instagram.com/onlytheglass"
+
+            [[params.footer.social.networks]]
+                icon = "fa-twitter"
+                link=  "//twitter.com/onlytheglass"
+
+
+        [params.footer.credits]
+            title = "Only the Glass"
+            text = "We offer repairs, installations and quotes for glass work ranging from a single windows at your residence to installs on multi-level high-rise.  Our certified technicians in your neighborhood specialize in serving homeowners and business owners to serve your needs in a timely manner and on budget. Select the service that most closely fits your needs below to learn more."

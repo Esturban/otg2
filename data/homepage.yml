@@ -1,0 +1,8 @@
+################# Blog ######################
+blog:
+  enable : true
+  title : "In the <span>field</span>"
+  bgImage : "img/PhotoFunia-1463919631-e1463919699705.jpg"
+  overlay:
+    enable : true
+
