@@ -43,6 +43,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # - you're done. Happy mailing!
     email = ""
     featured_image = "../img/bg_1.jpg"
+    
 
     # Custom assets
 	custom_css = ["css/freelancer.css"]
@@ -54,7 +55,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
     [params.header]
         # Copy your own image into './static/img/'' if you wish
-        image = "rsz_1otg.png"
+        #image = "rsz_1otg.png"
         name = "professional & reliable"
         subtitle = "Residental - Commercial - High-rise"
 

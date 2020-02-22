@@ -1,7 +1,8 @@
 {{ "<!-- Portfolio Grid Section -->" | safeHTML }}
 <section id="portfolio" {{ if .Site.Params.portfolio.overlay}} class="overlay" {{ end }}>
-    <div class="container">
-        <div class="row">
+    <div class="container">                
+    <div style = "height:100px"></div>
+    <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>{{ with .Site.Params.portfolio.title }}{{.}}{{end}}</h2>
                 <hr class="star-primary">
