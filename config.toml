@@ -42,10 +42,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
     email = ""
+    featured_image = "../img/bg_1.jpg"
 
     # Custom assets
 	custom_css = ["css/freelancer.css"]
-	#custom_js  = ["js/wow.min.js","js/bootstrap.min.js","js/main.js","js/slick.min.js","js/venobox.min.js","js/jquery.min.js"]
+	custom_js  = ["js/wow.min.js","js/jquery.min.js"]
 
     [params.navigation]
         brand = "Only The Glass"

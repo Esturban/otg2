@@ -82,7 +82,19 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #9CC3D5;
+    /* Here's the trick */
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+
+  /* Basic background styles */
+  /*background-image: url("img/bg_1.jpg") center center no-repeat;*/
+  background-size: cover;
+
+  /* Here's the same styles we applied to our content-div earlier */
+  color: white;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header .container {
@@ -633,4 +645,52 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+* { box-sizing: border-box; }
+.video-background {
+  overflow-y:hidden;
+  overflow-x:visible;
+  background: #000;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-background::after {
+padding-top: 56.25%;
+    display: block;
+    content: '';
+  
+}
+.video-foreground,
+.video-background iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display:block;
+  overflow-y:hidden;
+   margin: 0;
+    padding: 0;
+    line-height:0px;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 100%;  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
 }
